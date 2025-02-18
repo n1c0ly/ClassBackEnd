@@ -3,12 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
 </head>
 
 
     
 <body>
-   Lero lero bolero 
+  <form action="enviar" method="post">
+    <label for="codigo">Código do Produto:</label>
+    <input type="number" id="codigo" name="codigo" pattern="\d+" required><br><br>
+
+    <label for="nome">Nome do Produto:</label><br>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="marca">Marca:</label><br>
+    <input type="text" id="marca" name="marca" required>
+
+    <label for="preco">Preço:</label><br>
+    <input type="number" id="preco" name="preco" step="0.01" required>
+
+    <input type="submit" value="Enviar">
+  </form>
 </body>
 </html>
