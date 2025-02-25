@@ -1,22 +1,55 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css"/>
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <header>
-             <h1>WorkSpace</h1>
+            <h1>Minhetes's</h1>
+            <nav>
+                <a href="cadpro.html" target="centro">Cadastro de Produto</a>
+                <a href="listagem.html">Listagem de Produto</a>
+                <a href="excluir.html">Excluir Produto</a>
+                <a href="alterar.html">Alterar o Produto</a>
+            </nav>
         </header>
-        
-        <nav>
-            <a href="cadpro.html" target="centro" >Cadastro de produto</a>
-           <a href="listpro.html" target="centro" >Listagem de produto</a>
-           <a href="expro.html"target="centro"  >Excluir produto</a>
-            <a href="altpro.html" target="centro" >Alterar produto</a>
-        </nav>
+        <main>
+            <iframe src="apresentacao.html" name="centro"></iframe>
+        </main>
+    </body>
+</html>
+
+cadpro
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Cadastro de produto</h2>
+        <form method="post" action="salvar_produtos.jsp">
+            <p>
+            <label for="codigo">Codigo do Produto: </label>
+            <input type="number" name="codigo" id="codigo">
+            </p>
+            <p>
+            <label for="nome">Nome do Produto: </label>
+            <input type="text" name="nome" id="nome">
+            </p>
+            <p>
+            <label for="marca">Marca do Produto: </label>
+            <input type="text" name="marca" id="marca">
+            </p>
+            <p>
+            <label for="preco">Preço do Produto: </label>
+            <input type="number" name="preco" id="preco">
+            </p>
+            <input type="submit" value="Enviar/salvar">
+        </form>
     </body>
 </html>

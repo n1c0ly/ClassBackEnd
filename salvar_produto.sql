@@ -1,4 +1,8 @@
+<%@page import="java.sql.Connection" %>
+<%@page import="java.sql.DriverManager" %>
+<%@page import="java.sql.*" %>
 
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,7 +10,7 @@
         <title>Cadastro de Produto</title>
     </head>
     <body>
-        
+        <%
             //receber dados digitados do formulario cadpro
 
             int codigo;
@@ -38,18 +42,18 @@
                 st.setString(3, marca);
                 st.setDouble(4, preco);
                 st.executeUpdate(); //executar a instrução INSERT
-                out.print("<p style= 'color:red; font-size:25px'>Produto cadastrado com sucesso...</p>");
+                out.print("<p style= 'color: green; font-size:25px'>Produto cadastrado com sucesso...</p>");
             } catch (Exception x) {
                 String erro=x.getMessage();
                 if (erro.contains("Duplicate entry")) {
-                out.print("<p style='color:blue; font-size:25px;'>Este produto está cadastrado</p>");
+                out.print("<p style='color: purple; font-size25px'>Este produto está cadastrado</p>");
             } else {
-            out.print("<p style='color:red; font-size:25px;'>Mensagem de erro: " + erro + "</p>");
+            out.print("<p style='color: red; font-size:25px'>Mensagem de erro: " + erro + "</p>");
             
             
             }
             }
 
-       
+        %>
     </body>
 </html>
