@@ -10,6 +10,7 @@
         <title>Cadastro de Produto</title>
     </head>
     <body>
+  
         <%
             //receber dados digitados do formulario cadpro
 
