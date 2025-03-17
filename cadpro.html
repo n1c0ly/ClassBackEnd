@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-
-<body>
-   Lero lero bolero 
-</body>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Cadastro de produto</h2>
+        <form method="post" action="salvar_produtos.jsp">
+            <p>
+            <label for="codigo">Codigo do Produto: </label>
+            <input type="number" name="codigo" id="codigo">
+            </p>
+            <p>
+            <label for="nome">Nome do Produto: </label>
+            <input type="text" name="nome" id="nome">
+            </p>
+            <p>
+            <label for="marca">Marca do Produto: </label>
+            <input type="text" name="marca" id="marca">
+            </p>
+            <p>
+            <label for="preco">Preço do Produto: </label>
+            <input type="number" name="preco" id="preco">
+            </p>
+            <input type="submit" value="Enviar/salvar">
+        </form>
+    </body>
 </html>
