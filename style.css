@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    width: 80%;
+    height: 100px;
+    gap: 10px;
+    margin-top: 20px;
+    border-radius: 20px
+}
+
+header h1 {
+    color: #F60069;
+    font-size: 42px;
+    font-family: "Grechen Fuemen", serif;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+}
+
+nav a {
+    color: #F60069;
+    font-size: 15px;
+    font-family: "Playfair Display", serif;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    margin-top: 30px;
+    border: 0px;
+    width: 100%;
+    height: 450px;
+}
